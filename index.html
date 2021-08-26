@@ -12,11 +12,12 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="dist/baguetteBox.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <form action="index.html" method="POST">
+    <div class="wrapper">
       <input
         type="text"
         id="search-area"
@@ -24,21 +25,96 @@
         class="search-bar"
         placeholder="Search"
       />
-    </form>
 
-    <main class="main_img">
-      <img class="images" src="/photos/01.jpg" />
-      <img class="images" src="/photos/02.jpg" />
-      <img class="images" src="/photos/03.jpg" />
-      <img class="images" src="/photos/04.jpg" />
-      <img class="images" src="/photos/05.jpg" />
-      <img class="images" src="/photos/06.jpg" />
-      <img class="images" src="/photos/07.jpg" />
-      <img class="images" src="/photos/08.jpg" />
-      <img class="images" src="/photos/09.jpg" />
-      <img class="images" src="/photos/10.jpg" />
-      <img class="images" src="/photos/11.jpg" />
-      <img class="images" src="/photos/12.jpg" />
-    </main>
+      <main class="main_img gallery">
+        <a
+          href="/photos/01.jpg"
+          data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields. "
+        >
+          <img class="images" src="/photos/thumbnails/01.jpg" alt="Hey Bales"
+        /></a>
+        <a
+          href="/photos/02.jpg"
+          data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here."
+        >
+          <img class="images" src="/photos/thumbnails/02.jpg" alt="Lake"
+        /></a>
+        <a
+          href="/photos/03.jpg"
+          data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.
+          "
+        >
+          <img class="images" src="/photos/thumbnails/03.jpg" alt="Canyon"
+        /></a>
+        <a
+          href="/photos/04.jpg"
+          data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today. 
+          "
+        >
+          <img class="images" src="/photos/thumbnails/04.jpg" alt="Iceberg"
+        /></a>
+        <a
+          href="/photos/05.jpg"
+          data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.
+          "
+        >
+          <img class="images" src="/photos/thumbnails/05.jpg" alt="Desert"
+        /></a>
+        <a
+          href="/photos/06.jpg"
+          data-caption="Fall is coming, I love when the leaves on the trees start to change color.
+          "
+        >
+          <img class="images" src="/photos/thumbnails/06.jpg" alt="Fall"
+        /></a>
+        <a
+          href="/photos/07.jpg"
+          data-caption="I drove past this plantation yesterday, everything is so green!
+          "
+        >
+          <img class="images" src="/photos/thumbnails/07.jpg" alt="Plantation"
+        /></a>
+        <a
+          href="/photos/08.jpg"
+          data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!
+          "
+        >
+          <img class="images" src="/photos/thumbnails/08.jpg" alt="Dunes"
+        /></a>
+        <a
+          href="/photos/09.jpg"
+          data-caption="We enjoyed a quiet stroll down this countryside lane. 
+          "
+        >
+          <img
+            class="images"
+            src="/photos/thumbnails/09.jpg"
+            alt="Countryside Lane"
+        /></a>
+        <a
+          href="/photos/10.jpg"
+          data-caption="Sunset at the coast! The sky turned a lovely shade of orange.
+          "
+        >
+          <img class="images" src="/photos/thumbnails/10.jpg" alt="Sunset"
+        /></a>
+        <a
+          href="/photos/11.jpg"
+          data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.
+          "
+        >
+          <img class="images" src="/photos/thumbnails/11.jpg" alt="Cave"
+        /></a>
+        <a
+          href="/photos/12.jpg"
+          data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
+        >
+          <img class="images" src="/photos/thumbnails/12.jpg" alt="Bluebells"
+        /></a>
+      </main>
+    </div>
+
+    <script src="dist/baguetteBox.min.js" async></script>
+    <script src="app.js"></script>
   </body>
 </html>
